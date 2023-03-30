@@ -72,3 +72,22 @@ public class ilk_odev {
 
     }//main
 }//class
+/*
+
+-https://www.facebook.com adresine gidin
+-Cookies’i kabul edin
+-“Create an Account” button’una basin
+-“radio buttons” elementlerini locate edin
+-Secili degilse cinsiyet butonundan size uygun olani secin
+
+
+
+
+
+1)https://www.youtube.com adresine gidin
+2)Aşağıdaki adları kullanarak 3 test metodu oluşturun ve gerekli testleri yapin
+=> Sayfa başlığının “YouTube” oldugunu test edin
+=> YouTube resminin görüntülendiğini (isDisplayed()) test edin
+○Search Box 'in erisilebilir oldugunu test edin (isEnabled())
+○wrongTitleTest => Sayfa basliginin “youtube” olmadigini dogrulayin
+ */
