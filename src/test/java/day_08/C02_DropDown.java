@@ -2,6 +2,7 @@ package day_08;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -24,6 +25,7 @@ public class C02_DropDown {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://testcenter.techproeducation.com/index.php?page=dropdown");
+
     }
 
     @After
@@ -50,6 +52,7 @@ public class C02_DropDown {
         Select monthDropDown = new Select(month);
         monthDropDown.selectByVisibleText("July");
 
+
         //Gün Seçimi
         Thread.sleep(3000);
         WebElement day = driver.findElement(By.xpath("//select[@id='day']"));
@@ -68,5 +71,7 @@ public class C02_DropDown {
 //        }
         //Tavsiye edilen
         stateList.forEach(t -> System.out.println(t.getText()));
+
+
     }
 }

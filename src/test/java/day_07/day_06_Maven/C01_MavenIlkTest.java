@@ -1,5 +1,5 @@
 
-package day_06_Maven;
+package day_07.day_06_Maven;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

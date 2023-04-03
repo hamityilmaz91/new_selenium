@@ -15,6 +15,7 @@ import java.time.Duration;
 
 import static org.junit.Assert.*;
 
+
 public class C01_Assertion {
 
 
@@ -67,6 +68,8 @@ public class C01_Assertion {
             assertTrue(iceriyorMu);
         }
 
+
+
         @Test//image Test => Amazon logosunun görüntülendiğini (isDisplayed()) test edin
         public void test02() {
             WebElement logo = driver.findElement(By.id("nav-logo-sprites"));
@@ -79,6 +82,16 @@ public class C01_Assertion {
             assertTrue(searchBox.isEnabled());
         }
 
+        @Test
+    public void tes03() {
+
+         WebElement arama_cubugu = driver.findElement(By.cssSelector("input[id='twotabsearchtextbox']"));
+
+         assertTrue(arama_cubugu.isDisplayed());
+
+
+
+        }
         @Test//wrongTitleTest => Sayfa basliginin “amazon” içermediğini doğrulayın
         public void test04() {
             String actualTitle = driver.getTitle();
