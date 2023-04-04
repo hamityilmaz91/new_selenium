@@ -40,4 +40,5 @@ public class C01_RelativeLocators {
 
 
     }
+    public static int a ;
 }

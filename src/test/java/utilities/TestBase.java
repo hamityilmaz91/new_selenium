@@ -42,4 +42,5 @@ public abstract class TestBase {
         //Thread.sleep(3000);
         //driver.quit();
     }
+    public static int a;
 }
