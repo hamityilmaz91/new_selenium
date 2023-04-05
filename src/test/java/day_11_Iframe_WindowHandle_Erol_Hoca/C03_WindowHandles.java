@@ -46,6 +46,8 @@ public class C03_WindowHandles extends TestBase {
         }//Burda amaç bizim kontrolümüz dışında açılan pencerey geçiş yapmak
 /*
         List<String> tumWindowHandles = new ArrayList<String>(driver.getWindowHandles());
+         ArrayList tüm_hash_kodlar= new ArrayList(driver.getWindowHandles());
+
         driver.switchTo().window(tumWindowHandles.get(1));
  */
 
