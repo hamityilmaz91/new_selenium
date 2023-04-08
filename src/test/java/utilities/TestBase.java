@@ -28,7 +28,7 @@ public abstract class TestBase {
     //TestBase class'ından Obje oluşturmanın önüne geçilmesi için abstract yapılabilir
     //Orn: TestBase base = new TestBase()
     //Bu class'a extends ettiğimiz test classlarından ulaşabiliriz
-     protected static    WebDriver driver;
+    protected static WebDriver driver;
     @Before
     public void setUp() throws Exception {
 

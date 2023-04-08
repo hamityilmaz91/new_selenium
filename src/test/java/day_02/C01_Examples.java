@@ -33,6 +33,8 @@ public class C01_Examples {
 
 //         Sırasıyla Amazon, Facebook ve Youtube sayfalarına gidin
         driver.get("https://amazon.com");
+
+
         driver.get("https://facebook.com");
         driver.get("https://youtube.com");
 

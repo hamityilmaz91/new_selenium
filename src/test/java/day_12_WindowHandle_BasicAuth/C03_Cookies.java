@@ -12,9 +12,15 @@ public class C03_Cookies extends TestBase {
         //1-Amazon anasayfaya gidin
         driver.get("https://amazon.com");
 
+
         //2-tum cookie’leri listeleyin
+
+
+
+
         //TÜM COOKIE'LERI LİSTELEYEBİLMEK İÇİN driver.manage().getCookies() METHODUNU KULLANIRIZ
         Set<Cookie> cookieSet = driver.manage().getCookies();
+
         int sayac=1;
         for (Cookie w:cookieSet) {
             System.out.println(sayac+ ".ci cookie: "+w );
@@ -22,13 +28,28 @@ public class C03_Cookies extends TestBase {
             System.out.println("Value : "+w.getValue());
             sayac++;
         }
+        System.out.println("**********************************************************************************************");
+
+
+
+
 
         //3-Sayfadaki cookies sayisinin 5’den buyuk oldugunu test edin
         int cookieSayisi = cookieSet.size();
         Assert.assertTrue(cookieSayisi>5);
 
+
+
+
+
+
         //4-ismi i18n-prefs olan cookie degerinin USD oldugunu test edin
         String cookieValue = driver.manage().getCookieNamed("i18n-prefs").getValue();
+        System.out.println("driver.manage().getCookieNamed(\"i18n-prefs\").getName() = " + driver.manage().getCookieNamed("i18n-prefs").getName());
+        System.out.println("+++##########################################################");
+
+
+
         /*
         Name : i18n-prefs
         Value : USD
@@ -44,6 +65,9 @@ public class C03_Cookies extends TestBase {
          */
 
         //5-ismi “en sevdigim cookie” ve degeri “cikolatali” olan bir cookie  olusturun ve sayfaya ekleyin
+
+
+
         Cookie cookie = new Cookie("en sevdigim cookie","cikolatali");
         driver.manage().addCookie(cookie);
 
@@ -56,6 +80,9 @@ public class C03_Cookies extends TestBase {
         }
 
         //7-ismi skin olan cookie’yi silin ve silindigini test edin
+
+
+
         int silinmedenOnce = driver.manage().getCookies().size();
         driver.manage().deleteCookieNamed("skin");
         int silindiktenSonra = driver.manage().getCookies().size();
@@ -72,5 +99,6 @@ public class C03_Cookies extends TestBase {
         driver.manage().deleteAllCookies();
         cookieSet = driver.manage().getCookies();
         Assert.assertTrue(cookieSet.isEmpty());
+        System.out.println("cookieSet.size() = " + cookieSet.size());
     }
 }
