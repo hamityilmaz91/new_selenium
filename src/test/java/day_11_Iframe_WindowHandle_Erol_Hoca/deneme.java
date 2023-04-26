@@ -1,7 +1,6 @@
 package day_11_Iframe_WindowHandle_Erol_Hoca;
 
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import utilities.TestBase;
 

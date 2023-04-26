@@ -10,7 +10,6 @@ import utilities.TestBase;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class emoji extends TestBase {
     public static void main(String[] args) throws InterruptedException {

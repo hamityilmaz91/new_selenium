@@ -1,6 +1,5 @@
 package day_03_practice;
 
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -8,9 +7,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import utilities.TestBase;
-
-import java.security.Key;
-import java.util.List;
 
 public class Soru_1 extends TestBase {
     // https://www.amazon.com/ sayfasina gidin

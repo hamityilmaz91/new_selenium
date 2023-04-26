@@ -44,12 +44,12 @@ linkedIn sayfasına geçiniz
 
 
 //        techproeducation sayfasına geçiniz
-        bekle();
+        bekle(2);
         driver.switchTo().window(techpro_hash);
-bekle();
+bekle(2);
 //        youtube sayfasına geçiniz
         driver.switchTo().window(google_hash);
-        bekle();
+        bekle(2);
 //        linkedIn sayfasına geçiniz
         driver.switchTo().window(linkin_hash);
 

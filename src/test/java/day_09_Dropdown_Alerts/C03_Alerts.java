@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import utilities.TestBase;
 
+
 public class C03_Alerts extends TestBase {
     /*
     https://testcenter.techproeducation.com/index.php?page=javascript-alerts adresine gidin.

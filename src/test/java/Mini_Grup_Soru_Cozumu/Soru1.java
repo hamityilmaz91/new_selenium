@@ -1,6 +1,5 @@
 package Mini_Grup_Soru_Cozumu;
 
-import net.bytebuddy.build.Plugin;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;

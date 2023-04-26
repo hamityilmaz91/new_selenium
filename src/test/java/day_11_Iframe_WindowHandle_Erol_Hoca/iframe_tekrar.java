@@ -1,6 +1,5 @@
 package day_11_Iframe_WindowHandle_Erol_Hoca;
 
-import day_05_RelativeLocators.C01_RelativeLocators;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;

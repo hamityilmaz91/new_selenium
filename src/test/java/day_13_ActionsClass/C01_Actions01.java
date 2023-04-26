@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import utilities.TestBase;
 
+
 import static org.junit.Assert.assertEquals;
 
 public class C01_Actions01 extends TestBase {
@@ -26,6 +27,7 @@ public class C01_Actions01 extends TestBase {
 
         //1. adım: Actions objesi oluşturun
         Actions actions = new Actions(driver);
+
 
         //2. adım: Üzerinde işlem yapılacak WebElement'i locate edin
         WebElement kutu = driver.findElement(By.id("hot-spot"));

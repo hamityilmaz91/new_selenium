@@ -1,4 +1,4 @@
-package day14_FakerClass_FileExist;
+package day_14_FakerClass_FileExist;
 
 import org.junit.Test;
 import org.openqa.selenium.By;

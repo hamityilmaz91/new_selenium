@@ -1,7 +1,6 @@
-package day14_FakerClass_FileExist;
+package day_14_FakerClass_FileExist;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.checkerframework.checker.units.qual.K;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;

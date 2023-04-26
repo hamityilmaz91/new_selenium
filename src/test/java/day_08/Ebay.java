@@ -54,17 +54,7 @@ public class Ebay {
         //- Genişliği 225 ve Uzunluğu 225 olan resimlerin hepsine tıklayalım
         List<WebElement> img = driver.findElements(By.cssSelector("img[width='225'][height='225']"));
 
-        for (int i = 0; i<img.size(); i++) {
-            WebElement image = driver.findElements(By.cssSelector("img[width='225'][height='225']")).get(i);
-            image.click();
-            Duration timeout = Duration.ofSeconds(10);
-            WebDriverWait wait = new WebDriverWait(driver, timeout);
-            wait.until(ExpectedConditions.stalenessOf(image));
-            System.out.println("driver.getTitle() = " + driver.getTitle());
-            driver.navigate().back();
 
-
-        }
 
     }
 }

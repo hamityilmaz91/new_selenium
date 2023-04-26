@@ -47,7 +47,7 @@ public class C02_tekrar_Bireysel extends TestBase {
         driver.switchTo().newWindow(WindowType.WINDOW);
         driver.get("https://www.linkedin.com");
         String linkedn_hash_kodu = driver.getWindowHandle();
-        bekle();
+        bekle(2);
         //techproeducation sayfasına geçiniz:
 
         driver.switchTo().window(techpro_hash_kodu);

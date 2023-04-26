@@ -1,4 +1,4 @@
-package day14_FakerClass_FileExist;
+package day_14_FakerClass_FileExist;
 
 import org.junit.Assert;
 import org.junit.Test;

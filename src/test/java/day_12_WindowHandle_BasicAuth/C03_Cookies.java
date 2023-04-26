@@ -39,6 +39,8 @@ public class C03_Cookies extends TestBase {
         Assert.assertTrue(cookieSayisi>5);
 
 
+        //cookie ler bir web element degildirler fakat bir web element gibi isimleri attribute name leri
+        //attribute degerleri mevcuttur
 
 
 

@@ -1,9 +1,8 @@
-package day14_FakerClass_FileExist;
+package day_14_FakerClass_FileExist;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 

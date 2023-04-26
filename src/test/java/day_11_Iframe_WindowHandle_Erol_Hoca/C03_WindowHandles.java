@@ -6,8 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utilities.TestBase;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 
 public class C03_WindowHandles extends TestBase {
