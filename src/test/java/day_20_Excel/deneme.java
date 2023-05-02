@@ -1,8 +1,14 @@
 package day_20_Excel;
 
+import org.apache.poi.ss.usermodel.*;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class deneme {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         /*
 
@@ -18,17 +24,35 @@ public class deneme {
 
 
 
+
+
          */
 
+        // 1. adim fis objesi olusturulur . bu exceli oldugu gibi getirecek
+        FileInputStream fis = new FileInputStream("src/main/resources/Capitals.xlsx");
 
+        //2. adim olarak bu excel i  intellj in anlayacagi formata donusturmeliyiz
+        Workbook workbook = WorkbookFactory.create(fis);
 
+        // artik elimde intellij in anlayacagi excell var ve sayfalara ulasiyorum su anda
 
+        Sheet sheet = workbook.getSheet("Sheet1");
 
+        // simdi satirlara ulasiyorum
+        Row row = sheet.getRow(2);
 
+        // son olarak hucrelere ulasiyorum
+        Cell cell = row.getCell(1);
+        System.out.println(cell);
 
+        //1.satır 1. sütun daki bilgiyi yazdırınız
 
+        System.out.println(workbook.getSheet("Sheet1").getRow(0).getCell(0));
 
+        workbook.getSheet("Sheet1").getRow(2);
 
+        //Kullanılan satır sayısın bulun
+        System.out.println(workbook.getSheet("Sheet1").getPhysicalNumberOfRows());
 
 
     }
